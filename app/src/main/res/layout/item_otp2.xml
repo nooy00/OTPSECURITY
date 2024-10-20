@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bottom_border">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/scdream6"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewnumber"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/scdream6"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textViewExpiry"
+        android:gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/scdream6"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/OTPstate"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/scdream6"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+</LinearLayout>
+
+

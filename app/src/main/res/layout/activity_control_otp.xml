@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlOTP">
+
+    <Button
+        android:id="@+id/gobackbutton"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        android:background="@drawable/gobackbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/scdream6"
+        android:gravity="center"
+        android:text="OTP 관리"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+
+    <LinearLayout
+        android:id="@+id/list_Name_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/bottom_border2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_otpName"
+            android:gravity="center"
+            android:text="이름"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scdream6"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_otpNumber"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/scdream6"
+            android:gravity="center"
+            android:text="OTP"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txt_selectedTime"
+            android:gravity="center"
+            android:text="기간"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scdream6"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/buttonCancel"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/scdream6"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="상태"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_Name_title"
+        app:layout_constraintVertical_bias="0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

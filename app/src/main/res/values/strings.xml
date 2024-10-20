@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">YJC OTP</string>
+    <string name="default_selection">기간을 선택하세요.</string>
+    <string-array name="timespinner_items">
+        <item>기간을 선택하세요.</item>
+        <item>10초</item>
+        <item>10분</item>
+        <item>30분</item>
+        <item>3시간</item>
+        <item>6시간</item>
+        <item>12시간</item>
+        <item>1일</item>
+        <item>3일</item>
+        <item>일주일</item>
+    </string-array>
+</resources>

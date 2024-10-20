@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpage">
+
+    <RelativeLayout
+        android:id="@+id/some_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6198EB"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/logoutbutton"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="로그아웃"
+        android:textColor="@color/white"
+        android:background="@color/skyblue2"
+        android:fontFamily="@font/scdream6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/mainpagetitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream6"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+
+    <RelativeLayout
+        android:id="@+id/tab_admin"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:visibility="visible"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- 관리자 탭의 레이아웃 및 버튼들을 여기에 정의 -->
+
+        <Button
+            android:id="@+id/admin_controlerbutton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/scdream6"
+            android:text="관리자"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/admin_settingbutton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@id/admin_controlerbutton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="431dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/scdream6"
+            android:text="설정"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/gotoOTPapprove"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:text="OTP 발급"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/skyblue"
+            android:fontFamily="@font/scdream6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="298dp" />
+
+        <Button
+            android:id="@+id/contorOTPbutton"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:text="OTP 목록"
+            android:textSize="25dp"
+            android:fontFamily="@font/scdream6"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/skyblue"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginEnd="126dp"
+            android:layout_marginBottom="185dp" />
+
+        <Button
+            android:id="@+id/OTPlistbutton"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:text="OTP 내역"
+            android:textSize="25dp"
+            android:fontFamily="@font/scdream6"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/skyblue"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="126dp"
+            android:layout_marginBottom="75dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tab_settings"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- 설정 탭의 레이아웃 및 버튼들을 여기에 정의 -->
+
+        <Button
+            android:id="@+id/setting_controlerbutton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="211dp"
+            android:layout_marginBottom="430dp"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/scdream6"
+            android:text="관리자"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/setting_settingbutton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@id/setting_controlerbutton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="211dp"
+            android:layout_marginBottom="430dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/scdream6"
+            android:text="설정"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/STBUTTON"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:text="설정"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/skyblue"
+            android:fontFamily="@font/scdream6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="142dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="278dp" />
+
+        <Button
+            android:id="@+id/gotoauthenticbtn"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:text="관리자 인증"
+            android:textSize="25dp"
+            android:fontFamily="@font/scdream6"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/skyblue"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="295dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="125dp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

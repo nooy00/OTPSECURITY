@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "255032666284",
+    "firebase_url": "https://asdfadsf-efc06-default-rtdb.firebaseio.com",
+    "project_id": "asdfadsf-efc06",
+    "storage_bucket": "asdfadsf-efc06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255032666284:android:f578c2a6aad093f9085709",
+        "android_client_info": {
+          "package_name": "com.example.asdfadsf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCicyiUoZWuUA9WhmewIPSkbK0CvAxi5Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
